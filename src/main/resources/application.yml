@@ -1,0 +1,22 @@
+server:
+  port: 8081
+
+spring:
+
+  datasource:
+    url: jdbc:oracle:thin:@localhost:1522/free
+    username: C##Kadosh
+    password: kadosh123
+    driver-class-name: oracle.jdbc.OracleDriver
+
+  jpa:
+    database-platform: org.hibernate.dialect.OracleDialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+
+jwt:
+  secret: TuClaveSecretaUnicaParaFirmarTokens
+  expiration:
+    ms: 3600000
